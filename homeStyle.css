@@ -1,0 +1,32 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Project {
+    justify-content: center;
+}
+
+.Row {
+    display: flex;
+    height: 200px;
+}
+
+.Calculator {
+    background-color: rgba(32, 178, 170, .75);
+    border-radius: 5px;
+    border-style:dotted;
+    width: 50%;
+}
+
+/* springgreen, navy, slateblue*/
+
+.To-Do {
+    background-color: rgba(210, 160, 0, .75);
+    border-radius: 5px;
+    border-style:dotted;
+    width: 50%;
+}
+
+a {
+    color: black;
+}
