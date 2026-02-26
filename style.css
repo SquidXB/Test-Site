@@ -30,18 +30,65 @@ body {
     padding: 20px, 35px;
 }
 
-.result {
+.result { 
     background-color: white;
-    border-radius: 5px;
-    text-align: right;
-    height: 60px;
-    background: rgba(255, 255, 255, .01);
+    border-radius: 16px;
+    text-align:right;
+    font-size: 36px;
+    overflow: auto;
+    padding: 20px;
+    width: 75%;
+    margin-top: 15px;
+    font-weight: bold;
+    transform:translateX(7%);
+    background: rgba(255, 255, 255, .95);
+}
+
+.calcButtonRow {
+    margin-inline-start: 25px;
+    margin-top: 15px;
 }
 
 .calcButton{
-    width: 24%;
+    width: 70px;
     height: 70px;
     border: 2px black;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, .95);    
 }
+
+.calcButton:active {
+    background-color: rgba(255, 255, 255, .5);
+    animation: pulse;
+    animation-play-state: paused;
+    animation-duration: .025s;
+}
+
+.calcButton:hover {
+    transform:scale(1.05, 1.05);
+}
+
+.calcButton:last-child {
+    background-color: rgb(235, 44, 101);
+    
+}
+
+.calcButton:last-child:active {
+    background-color: rgba(180, 35, 84, 1);
+}
+
+#clear {
+    width: 160px;
+}
+
+#zero {
+    width: 250px;
+}
+
+@keyframes pulse {
+    from{transform: scale(.975, .975);}
+    to{transform: scale(1.05, 1.05);}
+} 
