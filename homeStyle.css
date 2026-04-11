@@ -27,6 +27,13 @@ html {
     width: 50%;
 }
 
+.Practice {
+    background-color: rgba(0, 245, 0, .75);
+    border-radius: 5px;
+    border-style: dotted;
+    width: 50%;
+}
+
 a {
     color: black;
 }
